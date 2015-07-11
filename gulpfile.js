@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('js', function() {
-  gulp.src('builds/src/**');
+  gulp.src('builds/demo/**');
 });
 
 gulp.task('html', function() {
@@ -34,12 +34,12 @@ gulp.task('minifyScripts',function () {
 */
 
 gulp.task('watch', function() {
-  gulp.watch('builds/src/**/*', ['js']);
-  gulp.watch('builds/src/*.html', ['html']);
+  gulp.watch('builds/demo/**/*', ['js']);
+  gulp.watch('builds/demo/*.html', ['html']);
 });
 
 gulp.task('webserver', function() {
-  gulp.src('builds/src/')
+  gulp.src('builds/demo/')
     .pipe(webserver({
       livereload: true,
       open: true
