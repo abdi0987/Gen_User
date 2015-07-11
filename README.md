@@ -30,7 +30,7 @@ angular.module('myApp',[
 
 Then use it in you HTML
 
-
+```html
 <div>
   <h3 gen-user='name'></h3>
   <ul>
@@ -39,3 +39,4 @@ Then use it in you HTML
     <li>I work at <span gen-user='company'></span></li>
   <ul>
 </div>
+```
