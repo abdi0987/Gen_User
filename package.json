@@ -1,0 +1,19 @@
+{
+  "name": "genuser",
+  "version": "0.1.0",
+  "description": "An angular directive that generates random users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdi0987/Gen_User.git"
+  },
+  "author": "Abdullahi Mahamed <abdi0987@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdi0987/Gen_User/issues"
+  },
+  "homepage": "https://github.com/abdi0987/Gen_User#readme"
+}

@@ -8,7 +8,7 @@ angular.module('GenUser',[])
         },
         template: '{{text}}',
         link: function (scope ,elem) {
-          $http.get('userData.json').success(function (mdata) {
+          $http.get('gen-user/userData.json').success(function (mdata) {
             scope.data = mdata;
             var value = scope.genUser;
             var indexOfUser = Math.floor((Math.random() * scope.data.length) + 0);
