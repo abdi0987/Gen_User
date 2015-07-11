@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Gen User Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="gen-user/users.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style media="screen">
+        div{
+            margin-top:200px;
+        }
+        div ul {
+          list-style-type:none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class='col-lg-8 col-lg-offset-4'>
+      <h3>Hi my name is <span gen-user='name'></span></h3>
+      <ul>
+        <li>My email is <span gen-user='email'></span></li>
+        <li>My phone number is <span gen-user='phone1'></span></li>
+        <li>I work at <span gen-user='company_name'></span></li>
+      <ul>
+    </div>
+  </body>
+</html>
