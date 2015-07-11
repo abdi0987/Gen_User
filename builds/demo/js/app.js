@@ -1,4 +1,1 @@
-angular.module('myApp',['GenUser'])
-.controller('MainController',function () {
-
-});
+angular.module('myApp',['GenUser']);

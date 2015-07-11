@@ -6,7 +6,8 @@ angular.module('GenUser',[])
         scope: {
             genUser: '@'
         },
-        template: '{{text}}',
+        transclude:true,
+        template: '{{text}}'+'<ng-transclude></ng-transclude>',
         link: function (scope ,elem) {
           $http.get('gen-user/userData.json').success(function (mdata) {
             scope.data = mdata;
@@ -22,7 +23,3 @@ angular.module('GenUser',[])
         }
     };
 }]);
-
-function UserGen(){
-    this.users = [];
-}
