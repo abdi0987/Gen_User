@@ -40,3 +40,5 @@ Then use it in you HTML
   <ul>
 </div>
 ```
+## Contribution
+If you want to add a feature please feel free to do so i will review it and add it. If you have any suggestion open a issue.
