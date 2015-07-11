@@ -1,4 +1,4 @@
-angular.module('UserGen',[])
+angular.module('GenUser',[])
 
 .directive('genUser',['$http','$log',function($http,$log) {
     return {
@@ -8,7 +8,7 @@ angular.module('UserGen',[])
         },
         template: '{{text}}',
         link: function (scope ,elem) {
-          $http.get('js/directives/userData.json').success(function (mdata) {
+          $http.get('userData.json').success(function (mdata) {
             scope.data = mdata;
             var value = scope.genUser;
             var indexOfUser = Math.floor((Math.random() * scope.data.length) + 0);
