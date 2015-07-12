@@ -15,6 +15,7 @@ Gen-User is an Angular directive that generates random user with the following d
     + email
     + web
 
+
 the data file contains 500+ records
 
 ## Config
