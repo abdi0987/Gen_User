@@ -1,6 +1,6 @@
-#Gen-User
+#GenUser
 
-Gen-User is an Angular directive that generates random user with the following data
+GenUser is an Angular directive that generates random user with the following data
 
 * User Data  
     + First Name
@@ -40,5 +40,26 @@ Then use it in you HTML
   <ul>
 </div>
 ```
+
+
+# GenUserJS
+Added support for basic javascript you can link the script and request random users.
+
+## Config
+
+Link the script 
+```html
+<script src="genUserJS/users.js"></script>
+```
+
+Then use it in your javascript
+```javascript
+var amountOfUsers = 3;
+var users = new Users(amountOfUsers);
+console.log(users);
+```
+This will return 3 objects with three unique users.
+
+
 ## Contribution
 If you want to add a feature please feel free to do so i will review it and add it. If you have any suggestion open a issue.
